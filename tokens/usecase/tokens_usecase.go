@@ -50,14 +50,14 @@ type tokensUseCase struct {
 
 // Struct to represent the JSON structure
 type AssetList struct {
-	ChainName string `json:"chainName"`
-	Assets    []struct {
+	Assets []struct {
 		Name             string `json:"name"`
 		CoinMinimalDenom string `json:"coinMinimalDenom"`
 		Symbol           string `json:"symbol"`
 		Decimals         int    `json:"decimals"`
 		CoingeckoID      string `json:"coingeckoId"`
 		Preview          bool   `json:"preview"`
+		ChainName        string `json:"chainName"`
 	} `json:"assets"`
 }
 

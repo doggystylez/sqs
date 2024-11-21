@@ -17,6 +17,8 @@ type Token struct {
 	// IsUnlisted is true if the token is unlisted.
 	IsUnlisted  bool   `json:"preview"`
 	CoingeckoID string `json:"coingeckoId"`
+	// Source chain name
+	Chain string `json:"chain"`
 }
 
 // PoolDenomMetaData contains the metadata about the denoms collected from the pools.
