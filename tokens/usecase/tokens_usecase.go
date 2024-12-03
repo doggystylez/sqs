@@ -58,6 +58,10 @@ type AssetList struct {
 		CoingeckoID      string `json:"coingeckoId"`
 		Preview          bool   `json:"preview"`
 		ChainName        string `json:"chainName"`
+		LogoUris         struct {
+			Png string `json:"png,omitempty"`
+			Svg string `json:"svg,omitempty"`
+		} `json:"logoURIs,omitempty"`
 	} `json:"assets"`
 }
 

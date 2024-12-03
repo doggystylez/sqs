@@ -52,6 +52,7 @@ func GetTokensFromChainRegistry(chainRegistryAssetsFileURL string) (map[string]d
 		token.Name = asset.Name
 		token.CoinMinimalDenom = asset.CoinMinimalDenom
 		token.Chain = asset.ChainName
+		token.Logo = asset.LogoUris
 		tokensByChainDenom[asset.CoinMinimalDenom] = token
 	}
 

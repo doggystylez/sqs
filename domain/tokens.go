@@ -19,6 +19,10 @@ type Token struct {
 	CoingeckoID string `json:"coingeckoId"`
 	// Source chain name
 	Chain string `json:"chain"`
+	Logo  struct {
+		Png string `json:"png,omitempty"`
+		Svg string `json:"svg,omitempty"`
+	} `json:"logo,omitempty"`
 }
 
 // PoolDenomMetaData contains the metadata about the denoms collected from the pools.
